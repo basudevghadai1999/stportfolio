@@ -4,21 +4,7 @@ from flask import Flask, jsonify, request,render_template
 # from pymongo import MongoClient
 # from bson.objectid import ObjectId
 app = Flask(__name__)
-html ="""<!DOCTYPE html>
-<html>
-<head>
-<title>Ghadai's Webpage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
-</head>
+html ="""
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -166,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 </footer>
 
 </body>
-</html>
 """
 
 @app.route('/')
