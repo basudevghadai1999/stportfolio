@@ -1,4 +1,4 @@
 Flask==2.2.1
 streamlit==1.1.0
-click>7.0
+click<8.0
 
