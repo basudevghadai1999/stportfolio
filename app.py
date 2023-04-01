@@ -1,9 +1,6 @@
-
 import streamlit as st
-from flask import Flask, jsonify, request,render_template
-# from pymongo import MongoClient
-# from bson.objectid import ObjectId
-app = Flask(__name__)
+
+# Example HTML content
 html = """
 <div class="container">
   <div class="row">
@@ -23,9 +20,5 @@ html = """
 </div>
 """
 
-@app.route('/')
-def index():
-    st.write(html, unsafe_allow_html=True)
-
-if __name__ == '__main__':
-    app.run()
+# Render the HTML content using st.markdown()
+st.markdown(html, unsafe_allow_html=True)
